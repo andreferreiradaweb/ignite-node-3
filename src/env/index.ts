@@ -1,4 +1,4 @@
-import 'dotenv.js'
+import 'dotenv'
 import { z } from 'zod'
 
 const envSchema = z.object({
