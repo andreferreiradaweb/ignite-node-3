@@ -30,10 +30,11 @@ model CheckIn {
 
 model Gym {
   id          String    @id @default(uuid())
+  createdAt   DateTime  @default(now())
   title       String
   description String?
   phone       String?
-  latitude    Decimal?
-  longitude   Decimal?
+  latitude    Decimal
+  longitude   Decimal
   CheckIn     CheckIn[]
 }
